@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #fec107;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.container .title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fec107;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container .form .input-field {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.container .form .input-field label {
+  font-size: 14px;
+  width: 220px;
+  color: #777;
+}
+
+.container .form .input-field .input,
+.container .form .input-field textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+
+.container .form .input-field .input:focus,
+.container .form .input-field textarea:focus {
+  border: 1px solid #fec107;
+}
+
+.container .form .input-field textarea {
+  resize: none;
+  height: 100px;
+}
+
+.container .form .input-field .custom-select {
+  width: 100%;
+}
+
+.container .form .input-field .custom-select select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.container .form .input-field .btn {
+  width: 100%;
+  background: #fec107;
+  color: #fff;
+  padding: 8px;
+  font-size: 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.container .form .input-field .btn:hover {
+  background: #ffd658;
+}
+
+.container .form .input-field:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 400px) {
+  .container .form .input-field {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .container .form .input-field label {
+    margin-bottom: 5px;
+  }
+}
